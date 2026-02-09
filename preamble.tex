@@ -5,11 +5,15 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{setspace}
 
 % --- Layout Settings ---
 \pagestyle{empty}
 \raggedright
 \urlstyle{same}
+\hypersetup{hidelinks}
+\setlength{\parskip}{0.5em}
+\setstretch{1.05}
 
 % --- Section formatting ---
 \titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
@@ -19,4 +23,13 @@
 \newcommand{\cvitem}[4]{
   \noindent \textbf{#1} \hfill #2 \\
   \textit{#3} \hfill #4 \\
+}
+
+\newcommand{\cvsubitem}[2]{%
+  \nointerlineskip
+  \cvitem{}{}{%
+    \textit{#1}%
+  }{%
+    \small #2%
+  }%
 }
