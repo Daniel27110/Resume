@@ -1,0 +1,22 @@
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+% --- Layout Settings ---
+\pagestyle{empty}
+\raggedright
+\urlstyle{same}
+
+% --- Section formatting ---
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+% --- Custom Command Definitions ---
+\newcommand{\cvitem}[4]{
+  \noindent \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill #4 \\
+}
