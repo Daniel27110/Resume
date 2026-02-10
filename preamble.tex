@@ -21,11 +21,14 @@
 \titlespacing*{\section}{0pt}{10pt}{5pt}
 
 % --- Custom Command Definitions ---
+
+% --- CV Item Command ---
 \newcommand{\cvitem}[4]{
   \noindent \textbf{#1} \hfill #2 \\
   \textit{#3} \hfill #4 \\
 }
 
+% --- CV Subitem Command ---
 \newcommand{\cvsubitem}[2]{%
   \nointerlineskip
   \cvitem{}{}{%
@@ -35,5 +38,5 @@
   }%
 }
 
-% --- Dot-separated inline items ---
+% --- Dot Separator Command ---
 \newcommand{\dotsep}{\hspace{0.5em}·\hspace{0.5em}}
